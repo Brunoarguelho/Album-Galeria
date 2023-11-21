@@ -64,7 +64,10 @@ span{ /*preloader*/
     50%{
        color: var(--primeira-color);
     }
-} /*fim do preloader*/
+} 
+/*fim do preloader*/
+
+/*galeria*/
 
 .container{
     padding: 25px 1%;
@@ -75,6 +78,7 @@ span{ /*preloader*/
     padding-bottom: 25px;
     color: goldenrod;
     text-shadow:  0 0 4px black;
+    text-transform: capitalize;
 }
 
 .container #search-box{
@@ -143,27 +147,33 @@ span{ /*preloader*/
     color: goldenrod;
 }
 
-footer >p{ /*rodape*/
+/*fim da galeria*/
+
+/*rodape*/
+
+footer >p{ 
     text-align: center;
     font-size: 24px;
     line-height: 1.8em;
     letter-spacing: -1px;
     font-weight: bold;
-    color: #bbbbbb;
-    background-color: #000;
+    color: #bbbbbb26;
+    background-color: #00000027;
     padding: 5px;
     width: 80%;
     margin: 20px auto;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 footer .icon-footer{ /*rodape, div icon*/
     position: relative;
     font-size: 40px;
-    color: #daa520;
+    color: #daa5202b;
     top: 76px;
     margin-left: 160px;
 }
+
+/*------------------------------------media screen--------------------------------------*/
 
 @media (max-width: 768px){
     .container .container-image{
@@ -191,6 +201,18 @@ footer .icon-footer{ /*rodape, div icon*/
     .container .container-image .image:hover{
         transform: scale(1.1);
     }
+
+    footer >p{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    footer .icon-footer{ 
+        font-size: 35px;
+        top: 68px;
+        margin-left: 110px;
+    }
+
 }   
 
 @media (max-width: 450px){
@@ -236,5 +258,18 @@ footer .icon-footer{ /*rodape, div icon*/
      .container .container-image .image:hover{
          transform: scale(1.1);
      }
+
+     footer >p{
+        text-align: center;
+        font-size: 18px;
+        width: 80%;
+        margin-top: -20px;
+    }
+
+    footer .icon-footer{ 
+        font-size: 35px;
+        top: 110px;
+        margin-left: 168px;
+    }
 }
     
